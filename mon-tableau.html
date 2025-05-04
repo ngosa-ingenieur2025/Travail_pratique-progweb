@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Horaire de cours - ISP Lubumbashi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            color: #2c3e50;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('family.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f1c40f;
+            font-size: 55px;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+        }
+
+        thead tr:first-child th {
+            background-color: #060a85;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 18px;
+            text-align: center;
+            border-bottom: 2px solid #0d078d;
+        }
+
+        thead tr:last-child th {
+            background-color: #0f6d03;
+            color: white;
+            font-size: 15px;
+            text-transform: uppercase;
+            padding: 14px;
+            text-align: center;
+        }
+
+        tbody td {
+            padding: 14px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        tbody tr:nth-child(even):not(.recreation) {
+            background-color: #fefefe;
+        }
+
+        .recreation td {
+            background-color: #ecf0f1;
+            font-style: italic;
+            font-weight: bold;
+            color: #34495e;
+            text-align: center;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #ecf0f1;
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        @media screen and (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                font-size: 13px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+        .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #0d0d0d;
+    text-shadow: 1px 1px 2px #c19f0840;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Institut Supérieur Pédagogique de Lubumbashi</h1>
+        <img src="logo-isp.jpg" alt="Logo ISP" class="logo">
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7">Horaire de cours</th>
+            </tr>
+            <tr>
+                <th>Heure</th>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+                <th>Samedi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08h à 11h</td>
+                <td>ALGO</td>
+                <td>OS</td>
+                <td>TÉLÉMATIQUE</td>
+                <td>MATHÉMATIQUE</td>
+                <td>EOE</td>
+                <td>ÉPISTÉMOLOGIE</td>
+            </tr>
+            <tr>
+                <td>11h à 13h</td>
+                <td>ALGO</td>
+                <td>OS</td>
+                <td>TÉLÉMATIQUE</td>
+                <td>MATHÉMATIQUE</td>
+                <td>EOE</td>
+                <td>ÉPISTÉMOLOGIE</td>
+            </tr>
+            <tr class="recreation">
+                <td colspan="7">RÉCRÉATION</td>
+            </tr>
+            <tr>
+                <td>14h à 16h</td>
+                <td>ALGO</td>
+                <td>OS</td>
+                <td>TÉLÉMATIQUE</td>
+                <td>MATHÉMATIQUE</td>
+                <td>EOE</td>
+                <td>ÉPISTÉMOLOGIE</td>
+            </tr>
+            <tr>
+                <td>16h à 18h</td>
+                <td>ALGO</td>
+                <td>OS</td>
+                <td>TÉLÉMATIQUE</td>
+                <td>MATHÉMATIQUE</td>
+                <td>EOE</td>
+                <td>ÉPISTÉMOLOGIE</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        Ngosa Lubeka Thierry vous dit, Merci!!
+    </div>
+
+</body>
+</html>
